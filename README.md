@@ -6,6 +6,6 @@ A time-saving script for any Llama CPP/LoRA workflow: it handles merging the LoR
 * Install requirements: ```pip install -r requirements.txt```
 
 ## Arguments
-* -l Path to LoRA (HF Repo ID or Local Path)
-* -b Path to base model (HF Repo ID or Local Path)
-* -f Format (F32, F16, q6_k, q4_0, etc.)
+* ```-l``` Path to LoRA (HF Repo ID or Local Path)
+* ```-b``` Path to base model (HF Repo ID or Local Path)
+* ```-f``` Format (F32, F16, q6_k, q4_0, etc.)
