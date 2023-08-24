@@ -2,7 +2,7 @@
 A time-saving script for any Llama CPP/LoRA workflow: it handles merging the LoRA into the base model, converting it to GGML format, and applying post-training quantization.
 
 ## Setup
-* Clone the llama.cpp repository: ```[git clone ](https://github.com/ggerganov/llama.cpp.git)https://github.com/ggerganov/llama.cpp.git .```
+* Clone the llama.cpp repository: ```git clone https://github.com/ggerganov/llama.cpp.git .```
 * Install requirements: ```pip install -r requirements.txt```
 
 ## Arguments
