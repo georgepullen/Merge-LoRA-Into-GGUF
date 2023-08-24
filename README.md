@@ -4,7 +4,7 @@ A time-saving script for any Llama CPP/LoRA workflow: it handles merging the LoR
 ## Setup
 * Clone this repository: ```git clone https://github.com/georgepullen/Merge-LoRA-Into-GGML.git .```
 * Clone the llama.cpp repository: ```git clone https://github.com/ggerganov/llama.cpp.git .```
-* Install requirements: ```pip install -r requirements.txt```
+* Install requirements for both repositories: ```pip install -r requirements.txt```, ```pip install -r merge_lora_requirements.txt```
 
 ## Arguments
 * ```-l``` Path to LoRA (HF Repo ID or Local Path)
