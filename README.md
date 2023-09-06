@@ -1,4 +1,4 @@
-# Merge LoRA, convert to GGML, and quantize.
+# Merge LoRA, convert to GGUF, and quantize.
 A time-saving script for any Llama CPP/LoRA workflow: it handles merging the LoRA into the base model, converting it to GGUF format, and applying post-training quantization.
 
 ## Setup
