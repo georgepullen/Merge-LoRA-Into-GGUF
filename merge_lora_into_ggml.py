@@ -26,5 +26,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_dir = merge_and_save(args.model_name, args.lora, args.base, args.format)
-    convert_to_ggml(args.model_name, args.format)
+    convert_to_ggml(args.model_name, args.base, args.format)
     print(f"{args.model_name} successfully merged, saved, and converted to {args.format} ggml format.")
