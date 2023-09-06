@@ -9,7 +9,7 @@ def merge_and_save(model_name, lora, base, format):
     merged_weights = peft_model.merge_and_unload()
     merged_weights.save_pretrained(f"{model_name}-hf")
 
-def convert_to_ggml(model_name, base, format):
+def convert_to_gguf(model_name, base, format):
     convert.main([
         f"{model_name}-hf",
         "--vocab-dir", {base},
@@ -26,5 +26,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_dir = merge_and_save(args.model_name, args.lora, args.base, args.format)
-    convert_to_ggml(args.model_name, args.base, args.format)
-    print(f"{args.model_name} successfully merged, saved, and converted to {args.format} ggml format.")
+    convert_to_gguf(args.model_name, args.base, args.format)
+    print(f"{args.model_name} successfully merged, saved, and converted to {args.format} gguf format.")
